@@ -7,10 +7,23 @@
     </head>
 
     <body>
+    {% extends "navmenu.html" %}
+
         <h1>About us....</h1>
-        <p>Information about us</p>
-    <a href="/">Go back to beginning</a>
-    <img width="1000" align="center" src="/static/images/newimage.jpg">
+
+    <nav aria-label="breadcrumb" class="breadcrumb">
+    <li class="breadcrumb-item active"><a href="/">Home</a></li>
+    <li class="breadcrumb-item" aria-current="about">About me</li>
+    <li class="breadcrumb-item"><a href="portfolio">Portfolio</a></li>
+
+  </ol>
+</nav>
+
+        <p>Welcome to About me page! Here you will find great moments from my live</p>
+    <img width="600" align="center`" src="/static/images/newimage.jpg">
+
+
+
 
     </body>
 </html>

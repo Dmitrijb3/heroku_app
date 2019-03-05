@@ -2,14 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Hello, Andis</title>
+        <title>My Blog</title>
         <link href="/static/style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
 
     <body>
-        <h1>Welcome back to HTML, Dmitrijs ;)</h1>
-    <a href="/about">Go to about page</a>
-    <h1>This is the first paragraph!!!</h1>
+
+    {% extends "navmenu.html" %}
+
+    <h1>Welcome back to my Portfolio Page</h1>
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="/">Home</li>
+    <li class="breadcrumb-item"><a href="about">About me</a></li>
+    <li class="breadcrumb-item"><a href="portfolio">My Portfolio</a></li>
+
+  </ol>
+</nav>
+
 
     </body>
 </html>
