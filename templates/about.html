@@ -3,11 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>About us</title>
-        <link href="/static/style.css" rel="stylesheet" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        {%  include "bootstrap_css.html" %}
     </head>
 
     <body>
@@ -15,19 +11,17 @@
 
         <h1>About us....</h1>
 
-    <nav aria-label="breadcrumb" class="breadcrumb">
-    <li class="breadcrumb-item active"><a href="/">Home</a></li>
-    <li class="breadcrumb-item" aria-current="about">About me</li>
-    <li class="breadcrumb-item"><a href="portfolio">Portfolio</a></li>
+  {% include "breadcrumb.html" %}
 
   </ol>
 </nav>
 
         <p>Welcome to About me page! Here you will find great moments from my live</p>
-    <img width="600" align="center`" src="/static/images/newimage.jpg">
+    <img class="mypic" align="center`" src="/static/images/newimage.jpg">
 
 
 
-
+<div class="footer" align="center"><p>All information and code are for studying purposes with ®WhiteDigital Rīga / March 2019</p>
+    </div>
     </body>
 </html>
