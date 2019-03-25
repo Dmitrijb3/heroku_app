@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    {%  include "bootstrap_css.html" %}
+</head>
+<body>
+{% include "navmenu.html" %}
+<h1>Contact Page</h1>
+{% include "breadcrumb.html" %}
+<div class="container-fluid bg-grey">
+  <h2 class="text-center pull-center">Contact me:</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><b>Contact me and i`ll get back to you within 24 hours.</b></p>
+        <br />
+      <p><span class="glyphicon glyphicon-map-marker"></span> Riga, Latvia</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +371 2967 3130</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> my@email.lv</p>
+    </div>
+  <form method="POST" action="/contacts">
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Your message" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit" data-toggle="tooltip" title="Do it my friend">Send</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+
+{% include "footer.html" %}
+
+</body>
+</html>
